@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking System</title>
+    <link rel="stylesheet" href="css/search.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <h1>Hotel Booking System</h1>
+    </header>
+
+    <main>
+        <section id="booking-form">
+            <h2>Book a Room</h2>
+            <form action="display.php" method="POST">				
+				<label for="state">State:</label>
+				<select name="state">
+					<option value="Maharashtra">Maharashtra</option>
+					<option value="Delhi">Delhi</option>
+					<option value="Karnataka">Karnataka</option>
+					<option value="Andhra Pradesh">Andhra Pradesh</option>
+					<option value="Tamil Nadu">Tamil Nadu</option>
+					<option value="West Bengal">West Bengal</option>
+					<option value="Ahmedabad">Ahmedabad</option>
+					<option value="UP">UP</option>
+					<option value="MP">MP</option>
+					<option value="Jharkhand">Jharkhand</option>
+					<option value="Uttrakhand">Uttrakhand</option>
+				</select>
+				
+				<label for="city">City:</label>
+				<select name="location">
+					<option value="Mumbai">Mumbai</option>
+					<option value="Delhi">Delhi</option>
+					<option value="Bangalore">Bangalore</option>
+					<option value="Hyderabad">Hyderabad</option>
+					<option value="Chennai">Chennai</option>
+					<option value="Kolkata">Kolkata</option>
+					<option value="Ahmedabad">Ahmedabad</option>
+					<option value="Pune">Pune</option>
+					<option value="Surat">Surat</option>
+					<option value="Jaipur">Jaipur</option>
+					<option value="Lucknow">Lucknow</option>
+					<option value="Kanpur">Kanpur</option>
+					<option value="Nagpur">Nagpur</option>
+					<option value="Visakhapatnam">Visakhapatnam</option>
+					<option value="Indore">Indore</option>
+					<option value="Thane">Thane</option>
+					<option value="Bhopal">Bhopal</option>
+					<option value="Patna">Patna</option>
+					<option value="Vadodara">Vadodara</option>
+					<option value="Ghaziabad">Ghaziabad</option>
+				</select>
+				
+				<label for="Price">Price range:</label>
+				<select name="price_range">
+					<option value="500-1000">&#8377;500 - &#8377;1000</option>
+					<option value="1001-2000">&#8377;1001 - &#8377;2000</option>
+					<option value="2001-4000">&#8377;2001 - &#8377;4000</option>
+					<option value="4001-5000">&#8377;4001 - &#8377;5000</option>
+					<option value="5000+">Over &#8377;5000</option>
+				</select>
+                <!-- Other input fields for room requirements -->
+				<label for="beds">No of beds:</label>
+				<input type="number" id="No of beds" name="type" required>
+
+                <input type="submit" class="btn btn-secondary" name="submit_with_constraints" value="Check Availability">
+            </form>
+			<div></div>
+			<div class="text-center"><a href="display.php?flag=0" class="btn btn-primary">Check All Available Room</a>
+			</div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hotel Booking System</p>
+    </footer>
+</body>
+</html>

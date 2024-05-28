@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Themed Web Page</title>
+    <link rel="stylesheet" href="css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins"
+    />
+  </head>
+  <body>
+    <video class="video-background" autoplay loop muted>
+      <source src="Cool black Background.mp4" type="video/mp4" />
+    </video>
+    <section>
+      <div class="register-box">
+        <form action="register.php" method="post">
+          <div class="card-reg">
+            <div class="card-container">
+              <h2>Sign-Up</h2>
+              <div class="input-box">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input type="text" name="username" required />
+                <label>Username</label>
+              </div>
+              <div class="input-box">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input type="email" name="email" required />
+                <label>Email</label>
+              </div>
+              <div class="input-box">
+                <span class="icon"
+                  ><ion-icon name="lock-closed"></ion-icon
+                ></span>
+                <input type="password" name="password" required />
+                <label>Password</label>
+              </div>
+              <div class="input-box">
+                <span class="icon"><ion-icon name="call"></ion-icon></span>
+                <input type="tel" name="phone" required />
+                <label>Phone no.</label>
+              </div>
+              <div class="remember-forget">
+                <label> <input type="checkbox" /> Remember Me </label>
+              </div>
+              <button type="submit">Register</button>
+              <!-- <a href="index.html"><button type="submit">Register</button></a> -->
+              <div class="register-link">
+                <p>Already have an account? <a href="login.html">Sign-In</a></p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
