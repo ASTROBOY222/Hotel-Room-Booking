@@ -32,6 +32,8 @@
     <div class="container">
       <div class="row mt-5">
         <div class="col">
+        <div ><a href="service.html" class="btn btn-primary">Back</a>
+			</div>
           <div class="card mt-5">
             <div class="card-header">
               <h2 class="display-6 text-center">Available Rooms...</h2>
