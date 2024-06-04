@@ -2,7 +2,6 @@
   session_start();
   if (isset($_SESSION['price'])) {
     $price = $_SESSION['price'];
-    echo $price;
   } else {
     echo "No user ID found.";
   }
@@ -20,8 +19,6 @@
 
     if ($checkoutDate <= $checkinDate) {
         echo "Check-out date must be after the check-in date.";
-    } else {
-        echo "Number of nights: " . $nights;
     }
   } else {
     echo "Please submit the form.";

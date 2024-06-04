@@ -24,8 +24,6 @@
     $bookingID = $stmt->insert_id;
     if ($result === false) {
         echo "Error: " . $stmt->error;
-    } else {
-        echo "Booking inserted successfully.";
     }
     $stmt->close();
 
@@ -39,10 +37,8 @@
                 WHERE id = $roomID;
             END";
     
-    if ($conn->query($sql0) === TRUE) {
-        echo "Event scheduled successfully.";
-    } else {
-        echo "Error scheduling event: " . $conn->error;
+    if ($conn->query($sql0) === FALSE) {
+      echo "Error scheduling event: " . $conn->error;
     }
     $conn->close();
 ?>
@@ -57,6 +53,7 @@
   </head>
   <body>
     <header>
+    <a href="login.html"><button type="submit">Back</button></a>
       <h1>Hotel Booking Confirmation</h1>
     </header>
     <div class="booking-form">
